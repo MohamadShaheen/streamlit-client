@@ -1,13 +1,11 @@
 import os
 import logging
-import requests
 import streamlit as st
 from dotenv import load_dotenv
 
 load_dotenv()
 
 server_url = os.getenv('SERVER_URL')
-session = requests.Session()
 
 if not os.path.exists('logs'):
     os.mkdir('logs')
@@ -25,6 +23,10 @@ def main():
     pages = {
         'Welcome': [
             st.Page('basic_pages/welcome.py', title='Welcome', default=True)
+        ],
+        'General Functionalities': [
+            st.Page('general_functionalities/retrieve_baby_names.py', title='Get Baby Names'),
+            st.Page('general_functionalities/currencies_converter.py', title='Currency Converter')
         ]
     }
 
