@@ -24,9 +24,12 @@ def main():
         'Welcome': [
             st.Page('basic_pages/welcome.py', title='Welcome', default=True)
         ],
+        'General Information': [
+            st.Page('general_information/retrieve_baby_names.py', title='Get Baby Names')
+        ],
         'General Functionalities': [
-            st.Page('general_functionalities/retrieve_baby_names.py', title='Get Baby Names'),
-            st.Page('general_functionalities/currencies_converter.py', title='Currency Converter')
+            st.Page('general_functionalities/currencies_converter.py', title='Currency Converter'),
+            st.Page('general_functionalities/password_generator.py', title='Password Generator')
         ]
     }
 
