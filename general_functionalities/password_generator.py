@@ -31,7 +31,7 @@ def generate_password(length, allow_numbers, allow_lowercase, allow_uppercase, a
 
     password = ''.join(secrets.choice(allowed_chars) for _ in range(length))
     with column_text:
-        st.text_input(label='', label_visibility='collapsed', value=password)
+        st.text_input(label='Password', label_visibility='collapsed', value=password)
 
 length = st.selectbox(
     label='Length',
@@ -91,4 +91,4 @@ if generate_password_button:
                       allow_extra_symbols)
 else:
     with column_text:
-        st.text_input(label='', label_visibility='collapsed', value='')
+        st.text_input(label='Password', label_visibility='collapsed', value='')

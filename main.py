@@ -29,7 +29,8 @@ def main():
         ],
         'General Functionalities': [
             st.Page('general_functionalities/currencies_converter.py', title='Currency Converter'),
-            st.Page('general_functionalities/password_generator.py', title='Password Generator')
+            st.Page('general_functionalities/password_generator.py', title='Password Generator'),
+            st.Page('general_functionalities/random_question.py', title='Random Question')
         ]
     }
 
